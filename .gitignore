@@ -1,0 +1,13 @@
+*.suo
+*.user
+_ReSharper.*
+*.pdb
+bin/
+obj/
+/packages
+logs/
+Web.config
+CarSite/Web.config
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
