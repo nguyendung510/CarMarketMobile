@@ -6,7 +6,6 @@ bin/
 obj/
 /packages
 logs/
-Web.config
 CarSite/Web.config
 [Bb]in
 [Dd]ebug*/
