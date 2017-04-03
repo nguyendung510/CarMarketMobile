@@ -1,0 +1,57 @@
+﻿.title {
+    color: #1260ab;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.header-container{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.menu {
+    /*background: transparent url(../../Images/common/bar.gif) repeat-x scroll 0px -39px;*/
+    background: #fee259; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#fff, #fee259); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff, #fee259); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff, #fee259); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff, #fee259); /* Standard syntax (must be last) */
+    border: 1px solid #ffb64b;
+    font-size: 0.95em;
+}
+
+    .menu li {
+        float: left;
+    }
+
+        .menu li a {
+            padding: 5px 8px 5px 8px;
+        }
+
+            .menu li a:focus {
+                background-color: #ffb64b;
+            }
+
+.car-item{
+    border: 1px solid #b7b7b7;
+    /*margin: 0 5px 0 5px;*/
+    margin-top: 10px;
+    padding: 5px 0 5px 5px;
+}
+
+.car-item .left-container{
+    width: 50%;
+    margin-right: 5px;
+}
+.car-item .right-container{
+    width: 45%;
+}
+.car-brand{
+    color: #1260ab;
+    font-weight:bold;
+    font-size: 1.2em;
+}
+.car-type{
+    color: #bdac23;
+    font-size: .8em;
+}

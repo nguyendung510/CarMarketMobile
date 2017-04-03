@@ -1,161 +1,119 @@
 ﻿@{
     ViewBag.Title = "Index";
 }
+@section Css{
+    <link href="~/Content/Apps/home.css" rel="stylesheet" />
+}
 
-<div class="row">
+@section Scripts{
+
+}
+
+<div class="row header-container">
     <div class="col-xs-12">
-        <a href="http://xegiadinhviet.com" title="oto, mua ban oto"></a>
+        <img src="~/Images/logo_text.jpg" class="img-responsive" />
+    </div>
+    <div class="col-xs-12" style="float:left;">
+        <ul class="nav menu">
+            <li><a href="#">Đăng ký</a></li>
+            <li><a href="#">Đăng nhập</a></li>
+            <li><a href="#">Hướng dẫn</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
     </div>
 </div>
 <div class="row">
     <div class="col-xs-12">
-        <table class="table">
-            <tr>
-                <td>Xe</td>
-                <td>Mô tả</td>
-                <td>Thông tin</td>
-            </tr>
-            <tr>
-                <td class="free-grid-td-0 " style="height:21px;">
-                <div style="width:135px;" align="center">
-                    <div class="car-info-status-new">Xe mới (2017)</div>
-                    <div class="car-info-source">Trong nước</div>
-                    <div class="car-info-firm">
-                    <a href="/car/SearchingCars?firm=Hyundai">Hyundai</a></div>
-                    <div class="car-photo"><a href="/Car/CarDetail/1163">
-                        <img class="img-responsive" title="Mẫu mới HyunDai Elantra : Đẳng cấp, sang trọng, lịch lãm đầy cá tính,...đầy sự thu hút" src="/Images/Cars_2046_1163/1.jpg" alt="Mẫu mới HyunDai Elantra : Đẳng cấp, sang trọng, lịch lãm đầy cá tính,...đầy sự thu hút"></a></div></div></td>
-                <td class="free-grid-td-1 " style="height:21px;">
-                    <div class="table-cell  " style="width:250px;" align="center">
-                        <div class="car-des-title"><a href="/Car/CarDetail/1163">Mẫu mới HyunDai Elantra : Đẳng cấp, sang trọng, lịch lãm đầy cá tính,...đầy sự thu hút</a></div><div class="car-des">
-                            HyunDai Elantra mẫu mới thị trường:Đẳng cấp, sang trọng, lịch lãm đầy cá tính,...đầy sự thu hút.
-                            Những màu xe hiện tại đang có sẵn: Trắng, Đen, Nâu, Xanh đá, Đỏ, Bạc.
-                            Elantra 1.6 MT: 615 triệu
-                            Elantra...
-                        </div>
-                    </div>
-                </td>
-                <td class="free-grid-td-2 " style="height:21px;"><div class="table-cell  " style="width:170px;" align="center"><div class="car-info"><div class="car-info-item">Km: 0 (km)</div><div class="car-info-item">Hộp số: Tự động</div><div class="car-info-price">615 Triệu</div><div class="car-info-place"><a href="/car/SearchingCars?firm=Hyundai&amp;province=Bà Rịa Vũng Tàu">Bà Rịa Vũng Tàu</a></div><div class="car-info-item car-info-user" style="max-width: 140px;"><a href="/Car/CarOfUser/2046">anhquan</a></div><div class="car-info-item car-info-tel">0909685024</div></div></div></td>
-            </tr>
-        </table>
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked> Tất cả
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Xe cũ
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Xe mới
+        </label>
+
+    </div>
+    <div class="col-xs-12">
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Xe nhập khẩu
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Xe trong nước
+        </label>
     </div>
 </div>
-@*<table class="table" id="">
-        <thead><tr><th class=""><div class="table-cell    " style="width:135px;height:25px;" id="" align="center">Xe</div></th><th class=" "><div class="table-cell    " style="width:250px;height:25px;" id="" align="center">Mô tả</div></th><th class=" "><div class="table-cell    " style="width:170px;height:25px;" id="" align="center">Thông tin</div></th></tr></thead>
-        <tbody>
-            <tr class="highlight-row    " highlightatt="highlight-att-main-0-0">
-                <td class="free-grid-td-0 " style="height:21px;"><div class="table-cell  " style="width:135px;" align="center"><div class="car-info-status-new">Xe mới (2017)</div><div class="car-info-source">Trong nước</div><div class="car-info-firm"><a href="/car/SearchingCars?firm=Hyundai">Hyundai</a></div><div class="car-photo"><a href="/Car/CarDetail/1163"><img title="Mẫu mới HyunDai Elantra : Đẳng cấp, sang trọng, lịch lãm đầy cá tính,...đầy sự thu hút" src="/Images/Cars_2046_1163/1.jpg" alt="Mẫu mới HyunDai Elantra : Đẳng cấp, sang trọng, lịch lãm đầy cá tính,...đầy sự thu hút"></a></div></div></td>
-                <td class="free-grid-td-1 " style="height:21px;">
-                    <div class="table-cell  " style="width:250px;" align="center">
-                        <div class="car-des-title"><a href="/Car/CarDetail/1163">Mẫu mới HyunDai Elantra : Đẳng cấp, sang trọng, lịch lãm đầy cá tính,...đầy sự thu hút</a></div><div class="car-des">
-                            HyunDai Elantra mẫu mới thị trường:Đẳng cấp, sang trọng, lịch lãm đầy cá tính,...đầy sự thu hút.
-                            Những màu xe hiện tại đang có sẵn: Trắng, Đen, Nâu, Xanh đá, Đỏ, Bạc.
-                            Elantra 1.6 MT: 615 triệu
-                            Elantra...
-                        </div>
-                    </div>
-                </td>
-                <td class="free-grid-td-2 " style="height:21px;"><div class="table-cell  " style="width:170px;" align="center"><div class="car-info"><div class="car-info-item">Km: 0 (km)</div><div class="car-info-item">Hộp số: Tự động</div><div class="car-info-price">615 Triệu</div><div class="car-info-place"><a href="/car/SearchingCars?firm=Hyundai&amp;province=Bà Rịa Vũng Tàu">Bà Rịa Vũng Tàu</a></div><div class="car-info-item car-info-user" style="max-width: 140px;"><a href="/Car/CarOfUser/2046">anhquan</a></div><div class="car-info-item car-info-tel">0909685024</div></div></div></td>
-            </tr>
-            <tr class="highlight-row    freegrid-even " highlightatt="highlight-att-main-1-1">
-                <td class="free-grid-td-0 " style="height:21px;"><div class="table-cell  " style="width:135px;" align="center"><div class="car-info-status-new">Xe mới (2016)</div><div class="car-info-source">Trong nước</div><div class="car-info-firm"><a href="/car/SearchingCars?firm=Toyota">Toyota</a></div><div class="car-photo"><a href="/Car/CarDetail/1162"><img title="Bán Toyota Vios 1.5E số sàn ưu đãi giảm tiền mặt + tặng phụ kiện" src="/Images/Cars_2046_1162/1.jpg" alt="Bán Toyota Vios 1.5E số sàn ưu đãi giảm tiền mặt + tặng phụ kiện"></a></div></div></td>
-                <td class="free-grid-td-1 " style="height:21px;">
-                    <div class="table-cell  " style="width:250px;" align="center">
-                        <div class="car-des-title"><a href="/Car/CarDetail/1162">Bán Toyota Vios 1.5E số sàn ưu đãi giảm tiền mặt + tặng phụ kiện</a></div><div class="car-des">
-                            Toyota Vios 1.5E số sàn, động cơ Dual VVT-I mới, đời 2016
-                            •	Máy xăng 1500cc; Dual VVT-i vận hành ổn định , êm ái
-                            •	Kích thước tổng thể: 4300 x 1700 x 1460.(mm)
-                            •	Hộp số tay 5 cấp
-                            •	Trang bị hệ thống ...
-                        </div>
-                    </div>
-                </td>
-                <td class="free-grid-td-2 " style="height:21px;"><div class="table-cell  " style="width:170px;" align="center"><div class="car-info"><div class="car-info-item">Km: 0 (km)</div><div class="car-info-item">Hộp số: Số tay</div><div class="car-info-price">544 Triệu</div><div class="car-info-place"><a href="/car/SearchingCars?firm=Toyota&amp;province=TPHCM">TPHCM</a></div><div class="car-info-item car-info-user" style="max-width: 140px;"><a href="/Car/CarOfUser/2046">anhquan</a></div><div class="car-info-item car-info-tel">0909685024</div></div></div></td>
-            </tr>
-            <tr class="highlight-row    " highlightatt="highlight-att-main-2-2">
-                <td class="free-grid-td-0 " style="height:21px;"><div class="table-cell  " style="width:135px;" align="center"><div class="car-info-status-old">Xe đã sử dụng (2011)</div><div class="car-info-source">Nhập khẩu</div><div class="car-info-firm"><a href="/car/SearchingCars?firm=Kia">Kia</a></div><div class="car-photo"><a href="/Car/CarDetail/1161"><img title="bán xe kia forte nhập Hàn" src="/Images/Cars_2061_1161/1.jpg" alt="bán xe kia forte nhập Hàn"></a></div></div></td>
-                <td class="free-grid-td-1 " style="height:21px;">
-                    <div class="table-cell  " style="width:250px;" align="center">
-                        <div class="car-des-title"><a href="/Car/CarDetail/1161">bán xe kia forte nhập Hàn</a></div><div class="car-des">
-                            xe bản hiếm nhập khẩu nguyên chiếc của Hàn
-                            giữ gìn cẩn thận
-                            máy móc ngon
-                            thiết kế an toàn cho người dùng...
-                        </div>
-                    </div>
-                </td>
-                <td class="free-grid-td-2 " style="height:21px;"><div class="table-cell  " style="width:170px;" align="center"><div class="car-info"><div class="car-info-item">Km: 60000 (km)</div><div class="car-info-item">Hộp số: Tự động</div><div class="car-info-price">520 Triệu</div><div class="car-info-place"><a href="/car/SearchingCars?firm=Kia&amp;province=HÀ NỘI">HÀ NỘI</a></div><div class="car-info-item car-info-user" style="max-width: 140px;"><a href="/Car/CarOfUser/2061">xuyenbkt</a></div><div class="car-info-item car-info-tel">0989669281</div></div></div></td>
-            </tr>
-            <tr class="highlight-row freegrid-even" highlightatt="highlight-att-main-3-3">
-            <td class="free-grid-td-0 " style="height:21px;">
-                <div class="table-cell" style="width:135px;" align="center">
-                <div class="car-info-status-old">Xe đã sử dụng (2013)</div>
-                <div class="car-info-source">Trong nước</div>
-                <div class="car-info-firm">
-                    <a href="/car/SearchingCars?firm=Kia">Kia</a>
-                    </div>
-                <div class="car-photo">
-                    <a href="/Car/CarDetail/1160">
-                    <img title="Cần bán xe KIA Carens SX màu ghi 7 chỗ" src="/Images/Cars_2060_1160/1.jpg" alt="Cần bán xe KIA Carens SX màu ghi 7 chỗ"></a>
-                    </div>
-                </div>
-                </td>
-            <td class="free-grid-td-1 " style="height:21px;"><div class="table-cell" style="width:250px;" align="center">
-                <div class="car-des-title"><a href="/Car/CarDetail/1160">Cần bán xe KIA Carens SX màu ghi 7 chỗ</a></div><div class="car-des">Gia đình ít đi nên cần bán xe KIA Carens SX, máy xăng (số tự động), 7 chỗ, đời 2013, màu Ghi, Bảng số Sài Gòn. Xe còn rất tốt 43.000km, mức tiêu hao xăng 10L/100km. Xe giữ kỹ và bảo dưỡng định kỳ, nội...</div></div></td><td class="free-grid-td-2 " style="height:21px;"><div class="table-cell  " style="width:170px;" align="center"><div class="car-info"><div class="car-info-item">Km: 0 (km)</div><div class="car-info-item">Hộp số: Tự động</div><div class="car-info-price">505 Triệu</div><div class="car-info-place"><a href="/car/SearchingCars?firm=Kia&amp;province=TPHCM">TPHCM</a></div><div class="car-info-item car-info-user" style="max-width: 140px;"><a href="/Car/CarOfUser/2060">dangmr2003</a></div><div class="car-info-item car-info-tel">0983350676</div></div></div></td></tr>
-            <tr class="highlight-row    " highlightatt="highlight-att-main-4-4">
-                <td class="free-grid-td-0 " style="height:21px;"><div class="table-cell  " style="width:135px;" align="center"><div class="car-info-status-new">Xe mới (2017)</div><div class="car-info-source">Nhập khẩu</div><div class="car-info-firm"><a href="/car/SearchingCars?firm=Mitsubishi">Mitsubishi</a></div><div class="car-photo"><a href="/Car/CarDetail/1157"><img title="Mitsubishi Mirage CVT" src="/Images/Cars_2056_1157/1.jpg" alt="Mitsubishi Mirage CVT"></a></div></div></td>
-                <td class="free-grid-td-1 " style="height:21px;">
-                    <div class="table-cell  " style="width:250px;" align="center">
-                        <div class="car-des-title"><a href="/Car/CarDetail/1157">Mitsubishi Mirage CVT</a></div><div class="car-des">
-                            SÀNH ĐIỆU. THÔNG MINH. HIỆU QUẢ
-                            Là mẫu xe compact hiện đại, Mirage với diện mạo mới sành điệu hơn, cá tính hơn cho cuộc sống năng động. Mirage kế thừa đầy đủ những phẩm chất truyền thống của Mitsubis...
-                        </div>
-                    </div>
-                </td>
-                <td class="free-grid-td-2 " style="height:21px;"><div class="table-cell  " style="width:170px;" align="center"><div class="car-info"><div class="car-info-item">Km: 0 (km)</div><div class="car-info-item">Hộp số: Tự động</div><div class="car-info-price">492 Triệu</div><div class="car-info-place"><a href="/car/SearchingCars?firm=Mitsubishi&amp;province=HÀ NỘI">HÀ NỘI</a></div><div class="car-info-item car-info-user" style="max-width: 140px;"><a href="/Car/CarOfUser/2056">linhbom0103</a></div><div class="car-info-item car-info-tel">0966396375</div></div></div></td>
-            </tr>
-            <tr class="highlight-row    freegrid-even " highlightatt="highlight-att-main-5-5"><td class="free-grid-td-0 " style="height:21px;"><div class="table-cell  " style="width:135px;" align="center"><div class="car-info-status-new">Xe mới (2017)</div><div class="car-info-source">Nhập khẩu</div><div class="car-info-firm"><a href="/car/SearchingCars?firm=Mitsubishi">Mitsubishi</a></div><div class="car-photo"><a href="/Car/CarDetail/1156"><img title="Mitsubishi Outlander" src="/Images/Cars_2056_1156/1.jpg" alt="Mitsubishi Outlander"></a></div></div></td><td class="free-grid-td-1 " style="height:21px;"><div class="table-cell  " style="width:250px;" align="center"><div class="car-des-title"><a href="/Car/CarDetail/1156">Mitsubishi Outlander</a></div><div class="car-des">All New Outlander lôi cuốn từ ngoại thất năng động và mạnh mẽ với ngôn ngữ thiết kế mới, tiện nghi từ nội thất sang trọng đầy tiện ích và chinh phục với khả năng vận hành thông minh đầy thú vị. Outlan...</div></div></td><td class="free-grid-td-2 " style="height:21px;"><div class="table-cell  " style="width:170px;" align="center"><div class="car-info"><div class="car-info-item">Km: 0 (km)</div><div class="car-info-item">Hộp số: Tự động</div><div class="car-info-price">1 Tỷ, 275 Triệu</div><div class="car-info-place"><a href="/car/SearchingCars?firm=Mitsubishi&amp;province=HÀ NỘI">HÀ NỘI</a></div><div class="car-info-item car-info-user" style="max-width: 140px;"><a href="/Car/CarOfUser/2056">linhbom0103</a></div><div class="car-info-item car-info-tel">0966396375</div></div></div></td></tr>
-            <tr class="highlight-row    " highlightatt="highlight-att-main-6-6"><td class="free-grid-td-0 " style="height:21px;"><div class="table-cell  " style="width:135px;" align="center"><div class="car-info-status-old">Xe đã sử dụng (2014)</div><div class="car-info-source">Trong nước</div><div class="car-info-firm"><a href="/car/SearchingCars?firm=Toyota">Toyota</a></div><div class="car-photo"><a href="/Car/CarDetail/1154"><img title="Bán xe Fortuner 2014" src="/Images/Cars_2057_1154/1.jpg" alt="Bán xe Fortuner 2014"></a></div></div></td><td class="free-grid-td-1 " style="height:21px;"><div class="table-cell  " style="width:250px;" align="center"><div class="car-des-title"><a href="/Car/CarDetail/1154">Bán xe Fortuner 2014</a></div><div class="car-des">oyota Fortuner 2.7V 2014 màu bạc form 2014 , xe công ty tư nhân chính chủ chạy giữ gìn cẩn thận chất lượng như mới, 4 lốp theo xe, sơn zin 98%. Xe trang bị nội thất da sang trọng, ghế da chỉnh điện , ...</div></div></td><td class="free-grid-td-2 " style="height:21px;"><div class="table-cell  " style="width:170px;" align="center"><div class="car-info"><div class="car-info-item">Km: 50000 (km)</div><div class="car-info-item">Hộp số: Tự động</div><div class="car-info-price">850 Triệu</div><div class="car-info-place"><a href="/car/SearchingCars?firm=Toyota&amp;province=HÀ NỘI">HÀ NỘI</a></div><div class="car-info-item car-info-user" style="max-width: 140px;"><a href="/Car/CarOfUser/2057">nguyenhuyen</a></div><div class="car-info-item car-info-tel">0982079868</div></div></div></td></tr>
-            <tr class="highlight-row    freegrid-even " highlightatt="highlight-att-main-7-7">
-                <td class="free-grid-td-0 " style="height:21px;"><div class="table-cell  " style="width:135px;" align="center"><div class="car-info-status-new">Xe mới (2017)</div><div class="car-info-source">Trong nước</div><div class="car-info-firm"><a href="/car/SearchingCars?firm=Chevrolet">Chevrolet</a></div><div class="car-photo"><a href="/Car/CarDetail/1152"><img title="Xe Chevrolet Cruze LTZ 2017 mới Khuyến mãi lên tới 60 tr cùng nhiều ưu đãi khác. Hỗ trợ ngân hàng tớ" src="/Images/Cars_2052_1152/1.jpg" alt="Xe Chevrolet Cruze LTZ 2017 mới Khuyến mãi lên tới 60 tr cùng nhiều ưu đãi khác. Hỗ trợ ngân hàng tớ"></a></div></div></td>
-                <td class="free-grid-td-1 " style="height:21px;">
-                    <div class="table-cell  " style="width:250px;" align="center">
-                        <div class="car-des-title"><a href="/Car/CarDetail/1152">Xe Chevrolet Cruze LTZ 2017 mới Khuyến mãi lên tới 60 tr cùng nhiều ưu đãi khác. Hỗ trợ ngân hàng tớ</a></div><div class="car-des">
-                            -Xe Chevrolet Cruze LTZ 2017 mới. Xe Gia đình cực chất. Nhiều ưu đãi và Hỗ trợ cực tốt từ Đại lý xe Chevrolet TPHCM.
-                            -Sử dụng động cơ Ecotec 1.8L cho công suất mạnh mẽ, đi kèm là hộp số tự động 6 cấp ...
-                        </div>
-                    </div>
-                </td>
-                <td class="free-grid-td-2 " style="height:21px;"><div class="table-cell  " style="width:170px;" align="center"><div class="car-info"><div class="car-info-item">Km: 0 (km)</div><div class="car-info-item">Hộp số: Tự động</div><div class="car-info-price">699 Triệu</div><div class="car-info-place"><a href="/car/SearchingCars?firm=Chevrolet&amp;province=TPHCM">TPHCM</a></div><div class="car-info-item car-info-user" style="max-width: 140px;"><a href="/Car/CarOfUser/2052">lamvanhuy1995</a></div><div class="car-info-item car-info-tel">0969323103</div></div></div></td>
-            </tr>
-            <tr class="highlight-row    " highlightatt="highlight-att-main-8-8">
-                <td class="free-grid-td-0 " style="height:21px;"><div class="table-cell  " style="width:135px;" align="center"><div class="car-info-status-new">Xe mới (2017)</div><div class="car-info-source">Nhập khẩu</div><div class="car-info-firm"><a href="/car/SearchingCars?firm=Mitsubishi">Mitsubishi</a></div><div class="car-photo"><a href="/Car/CarDetail/1148"><img title="Cần bán Mitsubishi Attrage CVT đời 2017, màu đỏ, nhập khẩu chính hãng" src="/Images/Cars_2050_1148/1.jpg" alt="Cần bán Mitsubishi Attrage CVT đời 2017, màu đỏ, nhập khẩu chính hãng"></a></div></div></td>
-                <td class="free-grid-td-1 " style="height:21px;">
-                    <div class="table-cell  " style="width:250px;" align="center">
-                        <div class="car-des-title"><a href="/Car/CarDetail/1148">Cần bán Mitsubishi Attrage CVT đời 2017, màu đỏ, nhập khẩu chính hãng</a></div><div class="car-des">
-                            Mitsubishi Attrage được trang bị nhiều tiện ích hiện đại, nội thất rộng rãi, sang trọng với ghế bọc da cao cấp cho 5 người ngồi.
-                            Hệ thống điều hòa tự động.
-                            Hệ thống âm thanh với màn hình DVD cảm ứng 7...
-                        </div>
-                    </div>
-                </td>
-                <td class="free-grid-td-2 " style="height:21px;"><div class="table-cell  " style="width:170px;" align="center"><div class="car-info"><div class="car-info-item">Km: 0 (km)</div><div class="car-info-item">Hộp số: Tự động</div><div class="car-info-price">541 Triệu</div><div class="car-info-place"><a href="/car/SearchingCars?firm=Mitsubishi&amp;province=HÀ NỘI">HÀ NỘI</a></div><div class="car-info-item car-info-user" style="max-width: 140px;"><a href="/Car/CarOfUser/2050">MitsubishiLongBiên</a></div><div class="car-info-item car-info-tel">0917243968</div></div></div></td>
-            </tr>
-            <tr class="highlight-row    freegrid-even " highlightatt="highlight-att-main-9-9">
-                <td class="free-grid-td-0 " style="height:21px;"><div class="table-cell  " style="width:135px;" align="center"><div class="car-info-status-new">Xe mới (2016)</div><div class="car-info-source">Nhập khẩu</div><div class="car-info-firm"><a href="/car/SearchingCars?firm=Mitsubishi">Mitsubishi</a></div><div class="car-photo"><a href="/Car/CarDetail/1147"><img title="cần bán Mitsubishi Outlander 2.0 CVT bản 2016 , nhập nhật bản nguyên chiếc , giá cạnh tranh" src="/Images/Cars_2050_1147/1.jpg" alt="cần bán Mitsubishi Outlander 2.0 CVT bản 2016 , nhập nhật bản nguyên chiếc , giá cạnh tranh"></a></div></div></td>
-                <td class="free-grid-td-1 " style="height:21px;">
-                    <div class="table-cell  " style="width:250px;" align="center">
-                        <div class="car-des-title"><a href="/Car/CarDetail/1147">cần bán Mitsubishi Outlander 2.0 CVT bản 2016 , nhập nhật bản nguyên chiếc , giá cạnh tranh</a></div><div class="car-des">
-                            All New OUTLANDER 2.0 CVT
-                            SANG TRỌNG - MẠNH MẼ
-                            TIỆN NGHI AN TOÀN
-                            - Xe nhập nguyên chiếc từ Nhật Bản
-                            - Hộp số tự động vô cấp
-                            - Đèn pha , đèn hậu , đèn chiều sáng ban ngày LED , cảm biến đèn pha, gạt ...
-                        </div>
-                    </div>
-                </td>
-                <td class="free-grid-td-2 " style="height:21px;"><div class="table-cell  " style="width:170px;" align="center"><div class="car-info"><div class="car-info-item">Km: 0 (km)</div><div class="car-info-item">Hộp số: Số tay</div><div class="car-info-price">1 Tỷ, 050 Triệu</div><div class="car-info-place"><a href="/car/SearchingCars?firm=Mitsubishi&amp;province=HÀ NỘI">HÀ NỘI</a></div><div class="car-info-item car-info-user" style="max-width: 140px;"><a href="/Car/CarOfUser/2050">MitsubishiLongBiên</a></div><div class="car-info-item car-info-tel">0917243968</div></div></div></td>
-            </tr>
-        </tbody>
-    </table>*@
 
+@*Content*@
+<div class="row">
+    <div class="col-xs-12 car-item pull-left">
+        <div class="left-container pull-left">
+            <img class="img-responsive" src="~/Images/Cars_2046_1163/1.jpg" />
+        </div>
+        <div class="right-container pull-left">
+            <span class="car-type">Xe đã sử dụng</span> <br />
+            <span class="car-brand">Toyota</span> <br />
+            <span class="label label-success">362 Triệu</span>
+            <span class="label label-default">Hà Nội</span>
+        </div>
+    </div>
+
+
+    @*Item test*@
+    <div class="col-xs-12 car-item pull-left">
+        <div class="left-container pull-left">
+            <img class="img-responsive" src="~/Images/Cars_2046_1163/1.jpg" />
+        </div>
+        <div class="right-container pull-left">
+            <span class="car-type">Xe đã sử dụng</span> <br />
+            <span class="car-brand">Toyota</span> <br />
+            <span class="label label-success">362 Triệu</span>
+            <span class="label label-default">Hà Nội</span>
+        </div>
+    </div>
+    <div class="col-xs-12 car-item pull-left">
+        <div class="left-container pull-left">
+            <img class="img-responsive" src="~/Images/Cars_2046_1163/1.jpg" />
+        </div>
+        <div class="right-container pull-left">
+            <span class="car-type">Xe đã sử dụng</span> <br />
+            <span class="car-brand">Toyota</span> <br />
+            <span class="label label-success">362 Triệu</span>
+            <span class="label label-default">Hà Nội</span>
+        </div>
+    </div>
+    <div class="col-xs-12 car-item pull-left">
+        <div class="left-container pull-left">
+            <img class="img-responsive" src="~/Images/Cars_2046_1163/1.jpg" />
+        </div>
+        <div class="right-container pull-left">
+            <span class="car-type">Xe đã sử dụng</span> <br />
+            <span class="car-brand">Toyota</span> <br />
+            <span class="label label-success">362 Triệu</span>
+            <span class="label label-default">Hà Nội</span>
+        </div>
+    </div>
+    <div class="col-xs-12 car-item pull-left">
+        <div class="left-container pull-left">
+            <img class="img-responsive" src="~/Images/Cars_2046_1163/1.jpg" />
+        </div>
+        <div class="right-container pull-left">
+            <span class="car-type">Xe đã sử dụng</span> <br />
+            <span class="car-brand">Toyota</span> <br />
+            <span class="label label-success">362 Triệu</span>
+            <span class="label label-default">Hà Nội</span>
+        </div>
+    </div>
+    <div class="col-xs-12 car-item pull-left">
+        <div class="left-container pull-left">
+            <img class="img-responsive" src="~/Images/Cars_2046_1163/1.jpg" />
+        </div>
+        <div class="right-container pull-left">
+            <span class="car-type">Xe đã sử dụng</span> <br />
+            <span class="car-brand">Toyota</span> <br />
+            <span class="label label-success">362 Triệu</span>
+            <span class="label label-default">Hà Nội</span>
+        </div>
+    </div>
+</div>
