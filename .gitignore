@@ -10,3 +10,4 @@ CarSite/Web.config
 [Bb]in
 [Dd]ebug*/
 [Rr]elease*/
+.vs/config/applicationhost.config
