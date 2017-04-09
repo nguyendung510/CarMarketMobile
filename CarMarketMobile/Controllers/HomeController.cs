@@ -13,5 +13,10 @@ namespace CarMarketMobile.Controllers
         {
             return View();
         }
+
+        public ActionResult Logon()
+        {
+            return View();
+        }
     }
 }

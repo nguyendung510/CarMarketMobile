@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "Logon";
+}
+
+@section Css{
+    <link href="~/Content/Apps/home.css" rel="stylesheet" />
+}
+
+@section Scripts{
+
+}
+
+<h2>Đăng nhập</h2>
+<hr />
+<h4><span class="title-des">Đăng nhập để đăng tin mua &amp; bán xe.</span></h4>
+<div class="row">
+    <div class="col-xs-12">
+        @using (Html.BeginForm())
+        {
+            <div class="form-group">
+                <label for="UserName" class="col-xs-12 control-label">Tên đăng nhập</label>
+                <div class="col-xs-12">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                        <div class="clearable-field">
+                            <input type="text" id="UserName" name="UserName" class="form-control clearable-input" placeholder="* Nhập Tên đăng nhập" data-bv-field="UserName">
+                            <span class="x-icon disabled" style="left: 203px;"></span>
+                        </div>
+                    </div>
+
+                    <small class="help-block" data-bv-validator="notEmpty" data-bv-for="UserName" data-bv-result="NOT_VALIDATED" style="display: none;">Nhập Tên đăng nhập</small><small class="help-block" data-bv-validator="callback" data-bv-for="UserName" data-bv-result="NOT_VALIDATED" style="display: none;">Tên đăng nhập</small>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="Password" class="col-xs-12 control-label">Mật khẩu</label>
+                <div class="col-xs-12">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                        <input type="password" id="Password" name="Password" maxlength="20" class="form-control" placeholder="* Nhập Mật khẩu" data-bv-field="Password">
+                    </div>
+
+                    <small class="help-block" data-bv-validator="notEmpty" data-bv-for="Password" data-bv-result="NOT_VALIDATED" style="display: none;">Nhập Mật khẩu</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="Password" data-bv-result="NOT_VALIDATED" style="display: none;">Mật khẩu phải có ít nhất 6 ký tự</small><small class="help-block" data-bv-validator="callback" data-bv-for="Password" data-bv-result="NOT_VALIDATED" style="display: none;">Tên đăng nhập hoặc Mật khẩu không chính xác.</small>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-xs-offset-5 col-xs-10">
+                    <div class="checkbox">
+                        <input data-val="true" data-val-required="The Nhớ tôi? field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true"><input name="RememberMe" type="hidden" value="false">
+                        <label for="RememberMe">Nhớ tôi?</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-8">
+                    <small id="status" class="help-block" style="color: red; display: none;"></small>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-8">
+                    <button type="submit" class="btn btn-primary btn-sm">Đăng nhập</button>&nbsp;
+                    <a href="/Account/RecoverPass">Quên mật khẩu?</a>
+                </div>
+            </div>
+            <br>
+            <div class="form-group">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-8">
+                    <a href="/Account/Register">Đăng ký</a> nếu Bạn chưa có tài khoản.
+                </div>
+            </div>
+        }
+    </div>
+</div>
