@@ -26,3 +26,31 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.header-container{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Customize menu */
+.menu-custom {
+    background: #fee259; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#fff, #fee259); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff, #fee259); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff, #fee259); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff, #fee259); /* Standard syntax (must be last) */
+    border: 1px solid #ffb64b;
+    font-size: 0.95em;
+}
+
+    .menu-custom li {
+        float: left;
+    }
+
+        .menu-custom li a {
+            padding: 5px 8px 5px 8px !important;
+        }
+
+            .menu-custom li a:focus {
+                background-color: #ffb64b;
+            }
