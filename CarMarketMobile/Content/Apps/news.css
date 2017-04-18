@@ -1,15 +1,31 @@
-﻿.news-item{
-    border: 1px solid #b7b7b7;
+﻿.news-item {
+    /*border-bottom: 2px solid #b7b7b7;*/
     /*margin: 0 5px 0 5px;*/
     margin-top: 10px;
     padding: 5px 0 5px 5px;
 }
 
 .news-item .left-container{
-    width: 50%;
+    width: 40%;
     margin-right: 5px;
 }
 
 .news-item .right-container{
-    width: 45%;
+    width: 55%;
+}
+
+.news-title{
+    color: #004370;
+    font-size: 17px;
+}
+
+.news-type{
+    color: #337ab7;
+    font-size: 12px;
+    font-weight:bold
+}
+
+.created-date{
+    color: #999;
+    font-size: 10px;
 }
