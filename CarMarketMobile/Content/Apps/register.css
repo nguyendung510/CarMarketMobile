@@ -1,0 +1,16 @@
+﻿
+.title-page {
+    font-family: 'OswaldVNF',Tahoma;
+    color: #1260ab;
+}
+
+.title-des {
+    font-style: italic;
+    color: #1260ab;
+}
+
+hr {
+    background-color: #1260ab;
+    height: 1px;
+    margin: 0;
+}
