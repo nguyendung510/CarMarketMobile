@@ -6,7 +6,8 @@
 }
 
 @section Scripts{
-
+    <script src="~/Scripts/Libs/LazyLoad/jquery.lazyload.min.js"></script>    
+    <script src="~/Scripts/Apps/index.js"></script>
 }
 <div class="row">
     <div class="col-xs-12">
@@ -49,7 +50,7 @@
     @*Item test*@
     <div class="col-xs-12 car-item pull-left">
         <div class="left-container pull-left">
-            <img class="img-responsive" src="~/Images/Cars_2046_1163/1.jpg" />
+            <img class="img-responsive" @*src="~/Images/Cars_2046_1163/1.jpg"*@ data-original="../Images/Cars_2046_1163/1.jpg" />
         </div>
         <div class="right-container pull-left">
             <span class="car-type">Xe đã sử dụng</span> <br />
@@ -60,7 +61,7 @@
     </div>
     <div class="col-xs-12 car-item pull-left">
         <div class="left-container pull-left">
-            <img class="img-responsive" src="~/Images/Cars_2046_1163/1.jpg" />
+            <img class="img-responsive" @*src="~/Images/Cars_2046_1163/1.jpg"*@ data-original="../Images/Cars_2046_1163/1.jpg" />
         </div>
         <div class="right-container pull-left">
             <span class="car-type">Xe đã sử dụng</span> <br />
@@ -71,7 +72,7 @@
     </div>
     <div class="col-xs-12 car-item pull-left">
         <div class="left-container pull-left">
-            <img class="img-responsive" src="~/Images/Cars_2046_1163/1.jpg" />
+            <img class="img-responsive" @*src="~/Images/Cars_2046_1163/1.jpg"*@ data-original="../Images/Cars_2046_1163/1.jpg" />
         </div>
         <div class="right-container pull-left">
             <span class="car-type">Xe đã sử dụng</span> <br />
@@ -82,7 +83,7 @@
     </div>
     <div class="col-xs-12 car-item pull-left">
         <div class="left-container pull-left">
-            <img class="img-responsive" src="~/Images/Cars_2046_1163/1.jpg" />
+            <img class="img-responsive" @*src="~/Images/Cars_2046_1163/1.jpg"*@ data-original="../Images/Cars_2046_1163/1.jpg" />
         </div>
         <div class="right-container pull-left">
             <span class="car-type">Xe đã sử dụng</span> <br />
@@ -93,7 +94,7 @@
     </div>
     <div class="col-xs-12 car-item pull-left">
         <div class="left-container pull-left">
-            <img class="img-responsive" src="~/Images/Cars_2046_1163/1.jpg" />
+            <img class="img-responsive" @*src="~/Images/Cars_2046_1163/1.jpg"*@ data-original="../Images/Cars_2046_1163/1.jpg" />
         </div>
         <div class="right-container pull-left">
             <span class="car-type">Xe đã sử dụng</span> <br />
@@ -102,4 +103,19 @@
             <span class="label label-default">Hà Nội</span>
         </div>
     </div>
+
+    @for (int i = 0; i < 100; i++)
+    {
+        <div class="col-xs-12 car-item pull-left">
+            <div class="left-container pull-left">
+                <img class="img-responsive" @*src="~/Images/Cars_2046_1163/1.jpg?v=@i"*@ data-original="../Images/Cars_2046_1163/1.jpg?v=@i" />
+            </div>
+            <div class="right-container pull-left">
+                <span class="car-type">Xe đã sử dụng</span> <br />
+                <span class="car-brand">Toyota @(i + 1)</span> <br />
+                <span class="label label-success">362 Triệu</span>
+                <span class="label label-default">Hà Nội</span>
+            </div>
+        </div>
+    }
 </div>
