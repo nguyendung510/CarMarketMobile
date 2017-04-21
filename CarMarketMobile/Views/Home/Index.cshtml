@@ -104,11 +104,13 @@
         </div>
     </div>
 
+        @{Random rd = new Random(); }
     @for (int i = 0; i < 100; i++)
     {
+        int imgNo = rd.Next(1, 14);
         <div class="col-xs-12 car-item pull-left">
             <div class="left-container pull-left">
-                <img class="img-responsive" @*src="~/Images/Cars_2046_1163/1.jpg?v=@i"*@ data-original="../Images/Cars_2046_1163/1.jpg?v=@i" />
+                <img class="img-responsive" @*src="~/Images/Cars_2046_1163/1.jpg?v=@i"*@ data-original="http://xegiadinhviet.com/Images/Cars_2089_1227/@(imgNo).jpg?v=@i" />
             </div>
             <div class="right-container pull-left">
                 <span class="car-type">Xe đã sử dụng</span> <br />
