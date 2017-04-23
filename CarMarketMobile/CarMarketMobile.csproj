@@ -115,6 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CarController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -144,6 +145,17 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Car\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CarMobile.Model\CarMobile.Model.csproj">
+      <Project>{3a8ecff0-b4ea-4785-833b-f0ddfa61c560}</Project>
+      <Name>CarMobile.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CarMobile.Service\CarMobile.Service.csproj">
+      <Project>{18b592cc-7e40-4327-85bf-8222cfc5c00d}</Project>
+      <Name>CarMobile.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
