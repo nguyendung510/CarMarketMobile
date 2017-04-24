@@ -18,7 +18,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Xe Gia Đình Việt", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a href="Home/Index" class="navbar-brand">
+                    <img class="img-brand" src="~/Images/xegiadinhviet.png" />
+                </a>
+                @*@Html.ActionLink("Xe Gia Đình Việt", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -34,14 +37,15 @@
 
     <div class="container body-content">
         <div class="row header-container">
-            <div class="col-xs-12">
-                <img src="~/Images/logo_text.jpg" class="img-responsive" />
-            </div>
+            @*<div class="col-xs-12">
+                    <img src="~/Images/logo_text.jpg" class="img-responsive" />
+                </div>*@
             <div class="col-xs-12" style="float:left;">
                 <ul class="nav menu-custom">
-                    <li>@Html.ActionLink("Đăng ký", "Register")</li>
-                    <li>@Html.ActionLink("Đăng nhập","Logon")</li>
-                    <li><a href="#">Hướng dẫn</a></li>
+                    <li><a href="#">Tìm xe</a></li>
+                    <li><a href="#">Bán xe</a></li>
+                    <li><a href="#">Salon</a></li>
+                    <li><a href="#">Tin Ôtô</a></li>
                     <li><a href="#">Liên hệ</a></li>
                 </ul>
             </div>

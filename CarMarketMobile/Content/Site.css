@@ -54,3 +54,7 @@ textarea {
             .menu-custom li a:focus {
                 background-color: #ffb64b;
             }
+
+.img-brand{
+    width: 50%;
+}

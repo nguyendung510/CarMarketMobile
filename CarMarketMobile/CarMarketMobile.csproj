@@ -101,6 +101,7 @@
     <Content Include="Images\Cars_2046_1163\1.jpg" />
     <Content Include="Images\logo_text.JPG" />
     <Content Include="Images\logo_text.png" />
+    <Content Include="Images\xegiadinhviet.png" />
     <Content Include="Scripts\Apps\index.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
