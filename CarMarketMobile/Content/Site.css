@@ -11,8 +11,10 @@
 
 .navbar-inverse .navbar-brand {
     color: #fff !important;
+    padding: 12px 15px;
 }
-.navbar-inverse .navbar-nav>li>a {
+
+.navbar-inverse .navbar-nav > li > a {
     color: #fff !important;
 }
 
@@ -27,7 +29,7 @@ textarea {
     max-width: 280px;
 }
 
-.header-container{
+.header-container {
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -55,7 +57,7 @@ textarea {
                 background-color: #ffb64b;
             }
 
-.img-brand{
-    width: 135px;
-    display:block;
+.img-brand {
+    width: 155px;
+    display: block;
 }
