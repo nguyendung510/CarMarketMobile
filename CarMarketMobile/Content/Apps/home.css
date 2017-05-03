@@ -48,3 +48,10 @@ hr {
     height: 1px;
     margin: 0;
 }
+
+.customize-menu {
+    float: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 15px;
+}
