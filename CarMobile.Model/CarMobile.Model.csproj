@@ -45,6 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Criteria\CarSearchingForYouCriteria.cs" />
+    <Compile Include="Criteria\CarSearchingImportDomesticCriteria.cs" />
+    <Compile Include="Criteria\CarSearchingNewOldCriteria.cs" />
+    <Compile Include="Criteria\CarSearchingSimilarModelCriteria.cs" />
     <Compile Include="Entity\CarModel.cs" />
     <Compile Include="Entity\CompanyHost.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

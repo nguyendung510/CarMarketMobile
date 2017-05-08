@@ -1,4 +1,5 @@
-﻿using CarMobile.Model.Entity;
+﻿using CarMobile.Model.Criteria;
+using CarMobile.Model.Entity;
 using CarMobile.Service;
 using System;
 using System.Collections.Generic;
@@ -195,26 +196,27 @@ namespace CarMarketMobile.Controllers
         //    return Json(listCars);
         //}
 
-        //[HttpPost]
-        //public JsonResult SearchingCarsForYou(CarSearchingForYouCriteria criteria)
-        //{
-        //    List<CarModel> listCars = carService.SearchingCars<CarModel>(criteria, AppSettings.IsGetFromCache).ToList<CarModel>();
-        //    return Json(listCars);
-        //}
+        [HttpPost]
+        public JsonResult SearchingCarsForYou(CarSearchingForYouCriteria criteria)
+        {
+            List<CarModel> listCars = carService.SearchingCarsForYou<CarModel>(criteria, AppSettings.IsGetFromCache).ToList();
+            
+            return Json(listCars);
+        }
 
-        //[HttpPost]
-        //public JsonResult SearchingCarsNewOld(CarSearchingNewOldCriteria criteria)
-        //{
-        //    List<CarModel> listCars = CarService.SearchingCars<CarModel>(criteria, AppSettings.IsGetFromCache).ToList<CarModel>();
-        //    return Json(listCars);
-        //}
+        [HttpPost]
+        public JsonResult SearchingCarsNewOld(CarSearchingNewOldCriteria criteria)
+        {
+            List<CarModel> listCars = carService.SearchingCars<CarModel>(criteria, AppSettings.IsGetFromCache).ToList();
+            return Json(listCars);
+        }
 
-        //[HttpPost]
-        //public JsonResult SearchingCarsImportDomestic(CarSearchingImportDomesticCriteria criteria)
-        //{
-        //    List<CarModel> listCars = CarService.SearchingCars<CarModel>(criteria, AppSettings.IsGetFromCache).ToList<CarModel>();
-        //    return Json(listCars);
-        //}
+        [HttpPost]
+        public JsonResult SearchingCarsImportDomestic(CarSearchingImportDomesticCriteria criteria)
+        {
+            List<CarModel> listCars = carService.SearchingCars<CarModel>(criteria, AppSettings.IsGetFromCache).ToList();
+            return Json(listCars);
+        }
 
         //[HttpPost]
         //public JsonResult SearchingCarsSimilarModel(CarSearchingSimilarModelCriteria criteria)
