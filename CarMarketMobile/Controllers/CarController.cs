@@ -197,11 +197,11 @@ namespace CarMarketMobile.Controllers
         //}
 
         [HttpPost]
-        public JsonResult SearchingCarsForYou(CarSearchingForYouCriteria criteria)
+        public ActionResult SearchingCarsForYou(CarSearchingForYouCriteria criteria)
         {
             List<CarModel> listCars = carService.SearchingCarsForYou<CarModel>(criteria, AppSettings.IsGetFromCache).ToList();
             
-            return Json(listCars);
+            return View("_CarItem", listCars);
         }
 
         [HttpPost]
