@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Functions>
+  <Function Name="CarMobileSite">
+    <Setting Key="Car_Searching" SpName="Car_Searching" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="Car_Searching_Firm_Model" SpName="Car_Searching_Firm_Model" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="Car_Searching_Firm_Model_Province" SpName="Car_Searching_Firm_Model_Province" DbName="CarHome.Database" Plain="1"></Setting>    
+    <Setting Key="Car_Searching_For_You" SpName="Car_Searching_For_You" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="Car_Inserting" SpName="Car_Inserting" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="get_New_Import_Cars" SpName="get_New_Import_Cars" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="Car_Searching_Like_Model" SpName="Car_Searching_Like_Model" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="get_New_Old_Cars" SpName="get_New_Old_Cars" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="get_Import_Domestic_Cars" SpName="get_Import_Domestic_Cars" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="get_Similar_Model_Cars" SpName="get_Similar_Model_Cars" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="get_Similar_Price_Cars" SpName="get_Similar_Price_Cars" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="get_Car_Detail" SpName="get_Car_Detail" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="get_Car_Buy_Detail" SpName="get_Car_Buy_Detail" DbName="CarHome.Database" Plain="1"></Setting>    
+    <Setting Key="get_Car_Edit_Info" SpName="get_Car_Edit_Info" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="get_Car_Buy_Edit_Info" SpName="get_Car_Buy_Edit_Info" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="get_YourCars" SpName="get_YourCars" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="get_YourCarsExpired" SpName="get_YourCarsExpired" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="delete_car" SpName="delete_car" DbName="CarHome.Database" Plain="1"></Setting>    
+    <Setting Key="edit_car" SpName="edit_car" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="Car_Buying_Insert" SpName="Car_Buying_Insert" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="Car_Buying_Edit" SpName="Car_Buying_Edit" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="Contact_Insert" SpName="Contact_Insert" DbName="CarHome.Database" Plain="1"></Setting>    
+    <Setting Key="Car_Searching_By_Text" SpName="Car_Searching_By_Text" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="Car_Visited" SpName="Car_Visited" DbName="CarHome.Database" Plain="1"></Setting>    
+    <Setting Key="car_saled" SpName="car_saled" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="Car_Approve" SpName="Car_Approve" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="Car_DisApprove" SpName="Car_DisApprove" DbName="CarHome.Database" Plain="1"></Setting>
+    <Setting Key="SearchingCarForBuy" SpName="SearchingCarForBuy" DbName="CarHome.Database" Plain="1"></Setting>    
+
+  </Function>
+</Functions>
