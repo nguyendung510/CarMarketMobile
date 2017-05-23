@@ -6,34 +6,33 @@
 }
 
 @section Scripts{
-    <script src="~/Scripts/Libs/LazyLoad/jquery.lazyload.min.js"></script>    
+    <script src="~/Scripts/Libs/LazyLoad/jquery.lazyload.min.js"></script>
     <script src="~/Scripts/Apps/index.js"></script>
 }
 <div class="row">
     <div class="col-xs-12">
         <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked> Tất cả
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="0" checked> Tất cả
         </label>
         <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Xe cũ
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="1"> Xe cũ
         </label>
         <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Xe mới
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="2"> Xe mới
         </label>
-
     </div>
     <div class="col-xs-12">
         <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Xe nhập khẩu
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3"> Xe nhập khẩu
         </label>
         <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Xe trong nước
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="4"> Xe trong nước
         </label>
     </div>
 </div>
 
 @*Content*@
-<div class="row">
+<div id="carListContainer" class="row">
     <div class="col-xs-12 car-item pull-left">
         <div class="left-container pull-left">
             <img class="img-responsive" src="~/Images/Cars_2046_1163/1.jpg" />
@@ -45,7 +44,6 @@
             <span class="label label-default">Hà Nội</span>
         </div>
     </div>
-
 
     @*Item test*@
     <div class="col-xs-12 car-item pull-left">
@@ -104,7 +102,7 @@
         </div>
     </div>
 
-        @{Random rd = new Random(); }
+    @{Random rd = new Random(); }
     @for (int i = 0; i < 5; i++)
     {
         int imgNo = rd.Next(1, 14);
