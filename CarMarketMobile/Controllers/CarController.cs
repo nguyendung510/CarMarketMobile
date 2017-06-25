@@ -201,7 +201,7 @@ namespace CarMarketMobile.Controllers
         {
             List<CarModel> listCars = carService.SearchingCarsForYou<CarModel>(criteria, AppSettings.IsGetFromCache).ToList();
             
-            return View("_CarItem", listCars);
+            return PartialView("_CarItem", listCars);
         }
 
         [HttpPost]

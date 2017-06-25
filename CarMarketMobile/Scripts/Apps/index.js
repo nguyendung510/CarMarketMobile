@@ -4,7 +4,6 @@
     });
 
     $('input:radio').change(function (element) {
-        debugger;
         SearchingCarsForYou();
     });
 });
