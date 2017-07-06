@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
+using TQQ.Data.Configuration;
 
 namespace CarMarketMobile
 {
@@ -11,6 +8,7 @@ namespace CarMarketMobile
     {
         protected void Application_Start()
         {
+            DbSettingProviderManager.Current.Start();
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }

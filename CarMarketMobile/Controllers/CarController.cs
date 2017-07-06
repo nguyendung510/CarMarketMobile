@@ -10,8 +10,7 @@ using System.Web.Mvc;
 namespace CarMarketMobile.Controllers
 {
     public class CarController : Controller
-    {
-        private static string approvalWaitting = "Tin đăng cuả Bạn đã sẽ đuợc duyệt trong vòng 24h";
+    {        
         private CarService carService = new CarService();
         #region GET Methods
 
